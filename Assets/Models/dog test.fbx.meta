@@ -1,0 +1,1196 @@
+fileFormatVersion: 2
+guid: 95de5fed86b98df4c90d8ff508361de3
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: back_1
+    100002: back_2
+    100004: back_3
+    100006: back_4
+    100008: back_5
+    100010: back_6
+    100012: back_7
+    100014: back_stabilize
+    100016: backCurve
+    100018: backIK
+    100020: blendShapes
+    100022: body
+    100024: body_CTRL
+    100026: collar
+    100028: controlGrp
+    100030: //RootNode
+    100032: head
+    100034: head_CTRL
+    100036: head_offset
+    100038: head_tip
+    100040: hips_cluster
+    100042: hips_CTRL
+    100044: hips_offset
+    100046: L_ear_1
+    100048: L_ear_1_CTRL
+    100050: L_ear_1_offset
+    100052: L_ear_2
+    100054: L_ear_2_CTRL
+    100056: L_ear_2_offset
+    100058: L_ear_3
+    100060: L_ear_3_CTRL
+    100062: L_ear_3_offset
+    100064: L_ear_4
+    100066: L_ear_4_CTRL
+    100068: L_ear_4_offset
+    100070: L_ear_5
+    100072: L_ear_5_CTRL
+    100074: L_ear_5_offset
+    100076: L_ear_6
+    100078: L_ear_6_CTRL
+    100080: L_ear_6_offset
+    100082: L_ear_tip
+    100084: l_elbow
+    100086: L_eye
+    100088: L_front_distance
+    100090: L_front_measureEnd
+    100092: L_front_measureStart
+    100094: L_front_paw
+    100096: L_front_toe_tip
+    100098: L_front_toes
+    100100: L_frontAnkle_pivot
+    100102: L_frontElbow_CTRL
+    100104: L_frontFlex_pivot
+    100106: L_frontFoot_CTRL
+    100108: L_frontFoot_IK
+    100110: L_frontLeg_IK
+    100112: L_frontSwivel_pivot
+    100114: L_frontToe1
+    100116: L_frontToe1_tip
+    100118: L_frontToe2
+    100120: L_frontToe2_tip
+    100122: L_frontToe3
+    100124: L_frontToe3_tip
+    100126: L_frontToe4
+    100128: L_frontToe4_tip
+    100130: L_frontToes_IK
+    100132: L_frontToeTap_pivot
+    100134: L_frontToeTip_pivot
+    100136: L_hind_distance
+    100138: L_hind_measureEnd
+    100140: L_hind_measureStart
+    100142: L_hind_paw
+    100144: L_hind_toe_tip
+    100146: L_hind_toes
+    100148: L_hindAnkle_IK
+    100150: L_hindFlex_offset
+    100152: L_hindFlex_pivot
+    100154: L_hindFoot_CTRL
+    100156: L_hindHelper_1
+    100158: L_hindHelper_2
+    100160: L_hindHelper_3
+    100162: L_hindHelper_4
+    100164: L_hindHelper_IK
+    100166: L_hindKnee_CTRL
+    100168: L_hindLeg_IK
+    100170: L_hindSwivel_pivot
+    100172: L_hindToe1
+    100174: L_hindToe1_tip
+    100176: L_hindToe2
+    100178: L_hindToe2_tip
+    100180: L_hindToe3
+    100182: L_hindToe3_tip
+    100184: L_hindToe4
+    100186: L_hindToe4_tip
+    100188: L_hindToe_IK
+    100190: L_hindToeTap_pivot
+    100192: L_hindToeTip_pivot
+    100194: L_hip
+    100196: L_hip_CTRL
+    100198: L_hip_offset
+    100200: L_knee
+    100202: L_shoulder
+    100204: L_shoulder_CTRL
+    100206: L_shoulder_offset
+    100208: leftEye
+    100210: meshGroup
+    100212: midBack_cluster
+    100214: midBack_CTRL
+    100216: midBack_offset
+    100218: neck
+    100220: neck_CTRL
+    100222: neck_offset
+    100224: nose
+    100226: nose_CTRL
+    100228: nose_offset
+    100230: nose_tip
+    100232: R_ear_1
+    100234: R_ear_1_CTRL
+    100236: R_ear_1_offset
+    100238: R_ear_2
+    100240: R_ear_2_CTRL
+    100242: R_ear_2_offset
+    100244: R_ear_3
+    100246: R_ear_3_CTRL
+    100248: R_ear_3_offset
+    100250: R_ear_4
+    100252: R_ear_4_CTRL
+    100254: R_ear_4_offset
+    100256: R_ear_5
+    100258: R_ear_5_CTRL
+    100260: R_ear_5_offset
+    100262: R_ear_6
+    100264: R_ear_6_CTRL
+    100266: R_ear_6_offset
+    100268: R_ear_tip
+    100270: R_elbow
+    100272: R_eye
+    100274: R_front_distance
+    100276: R_front_measureEnd
+    100278: R_front_measureStart
+    100280: R_front_paw
+    100282: R_front_toe_tip
+    100284: R_front_toes
+    100286: R_frontAnkle_pivot
+    100288: R_frontElbow_CTRL
+    100290: R_frontFlex_pivot
+    100292: R_frontFoot_CTRL
+    100294: R_frontFoot_IK
+    100296: R_frontLeg_IK
+    100298: R_frontSwivel_pivot
+    100300: R_frontToe1
+    100302: R_frontToe1_tip
+    100304: R_frontToe2
+    100306: R_frontToe2_tip
+    100308: R_frontToe3
+    100310: R_frontToe3_tip
+    100312: R_frontToe4
+    100314: R_frontToe4_tip
+    100316: R_frontToes_IK
+    100318: R_frontToeTap_pivot
+    100320: R_frontToeTip_pivot
+    100322: R_hind_distance
+    100324: R_hind_measureEnd
+    100326: R_hind_measureStart
+    100328: R_hind_paw
+    100330: R_hind_toe_tip
+    100332: R_hind_toes
+    100334: R_hindAnkle_IK
+    100336: R_hindFlex_offset
+    100338: R_hindFlex_pivot
+    100340: R_hindFoot_CTRL
+    100342: R_hindHelper_1
+    100344: R_hindHelper_2
+    100346: R_hindHelper_3
+    100348: R_hindHelper_4
+    100350: R_hindHelper_IK
+    100352: R_hindKnee_CTRL
+    100354: R_hindLeg_IK
+    100356: R_hindSwivel_pivot
+    100358: R_hindToe1
+    100360: R_hindToe1_tip
+    100362: R_hindToe2
+    100364: R_hindToe2_tip
+    100366: R_hindToe3
+    100368: R_hindToe3_tip
+    100370: R_hindToe4
+    100372: R_hindToe4_tip
+    100374: R_hindToe_IK
+    100376: R_hindToeTap_pivot
+    100378: R_hindToeTip_pivot
+    100380: R_hip
+    100382: R_hip_CTRL
+    100384: R_hip_offset
+    100386: R_knee
+    100388: R_shoulder
+    100390: R_shoulder_CTRL
+    100392: R_shoulder_offset
+    100394: rigGroup
+    100396: rightEye
+    100398: root
+    100400: skeletonGroup
+    100402: snout_1
+    100404: snout_1_CTRL
+    100406: snout_1_offset
+    100408: snout_2
+    100410: snout_2_CTRL
+    100412: snout_2_offset
+    100414: snout_3
+    100416: snout_3_CTRL
+    100418: snout_3_offset
+    100420: superMover
+    100422: tag
+    100424: tag 1
+    100426: tag_collisionObject
+    100428: tag_dynamicCurve
+    100430: tag_end
+    100432: tag_follicle1
+    100434: tag_hairSystem1
+    100436: tag_hairSystem1Follicles
+    100438: tag_ikHandle
+    100440: tag_originalCurve
+    100442: tag_rigElements
+    100444: tagClip
+    100446: tail2_IK_CTRL
+    100448: tail2_IK_offset
+    100450: tail3_IK_CTRL
+    100452: tail3_IK_offset
+    100454: tail4_IK_CTRL
+    100456: tail4_IK_offset
+    100458: tail_bound_1
+    100460: tail_bound_2
+    100462: tail_bound_3
+    100464: tail_bound_4
+    100466: tail_bound_5
+    100468: tail_bound_6
+    100470: tail_bound_tip
+    100472: tail_cluster1
+    100474: tail_cluster2
+    100476: tail_cluster3
+    100478: tail_cluster4
+    100480: tail_FK_1
+    100482: tail_FK_1_CTRL
+    100484: tail_FK_1_offset
+    100486: tail_FK_2
+    100488: tail_FK_2_CTRL
+    100490: tail_FK_2_offset
+    100492: tail_FK_3
+    100494: tail_FK_3_CTRL
+    100496: tail_FK_3_offset
+    100498: tail_FK_4
+    100500: tail_FK_4_CTRL
+    100502: tail_FK_4_offset
+    100504: tail_FK_5
+    100506: tail_FK_5_CTRL
+    100508: tail_FK_5_offset
+    100510: tail_FK_6
+    100512: tail_FK_6_CTRL
+    100514: tail_FK_6_offset
+    100516: tail_FK_tip
+    100518: tail_IK_1
+    100520: tail_IK_2
+    100522: tail_IK_3
+    100524: tail_IK_4
+    100526: tail_IK_5
+    100528: tail_IK_6
+    100530: tail_IK_tip
+    100532: tailBase_IK_CTRL
+    100534: tailBase_IK_offset
+    100536: tailCurve
+    100538: tailIK
+    100540: upperBack_cluster
+    100542: upperBack_CTRL
+    100544: upperBack_offset
+    400000: back_1
+    400002: back_2
+    400004: back_3
+    400006: back_4
+    400008: back_5
+    400010: back_6
+    400012: back_7
+    400014: back_stabilize
+    400016: backCurve
+    400018: backIK
+    400020: blendShapes
+    400022: body
+    400024: body_CTRL
+    400026: collar
+    400028: controlGrp
+    400030: //RootNode
+    400032: head
+    400034: head_CTRL
+    400036: head_offset
+    400038: head_tip
+    400040: hips_cluster
+    400042: hips_CTRL
+    400044: hips_offset
+    400046: L_ear_1
+    400048: L_ear_1_CTRL
+    400050: L_ear_1_offset
+    400052: L_ear_2
+    400054: L_ear_2_CTRL
+    400056: L_ear_2_offset
+    400058: L_ear_3
+    400060: L_ear_3_CTRL
+    400062: L_ear_3_offset
+    400064: L_ear_4
+    400066: L_ear_4_CTRL
+    400068: L_ear_4_offset
+    400070: L_ear_5
+    400072: L_ear_5_CTRL
+    400074: L_ear_5_offset
+    400076: L_ear_6
+    400078: L_ear_6_CTRL
+    400080: L_ear_6_offset
+    400082: L_ear_tip
+    400084: l_elbow
+    400086: L_eye
+    400088: L_front_distance
+    400090: L_front_measureEnd
+    400092: L_front_measureStart
+    400094: L_front_paw
+    400096: L_front_toe_tip
+    400098: L_front_toes
+    400100: L_frontAnkle_pivot
+    400102: L_frontElbow_CTRL
+    400104: L_frontFlex_pivot
+    400106: L_frontFoot_CTRL
+    400108: L_frontFoot_IK
+    400110: L_frontLeg_IK
+    400112: L_frontSwivel_pivot
+    400114: L_frontToe1
+    400116: L_frontToe1_tip
+    400118: L_frontToe2
+    400120: L_frontToe2_tip
+    400122: L_frontToe3
+    400124: L_frontToe3_tip
+    400126: L_frontToe4
+    400128: L_frontToe4_tip
+    400130: L_frontToes_IK
+    400132: L_frontToeTap_pivot
+    400134: L_frontToeTip_pivot
+    400136: L_hind_distance
+    400138: L_hind_measureEnd
+    400140: L_hind_measureStart
+    400142: L_hind_paw
+    400144: L_hind_toe_tip
+    400146: L_hind_toes
+    400148: L_hindAnkle_IK
+    400150: L_hindFlex_offset
+    400152: L_hindFlex_pivot
+    400154: L_hindFoot_CTRL
+    400156: L_hindHelper_1
+    400158: L_hindHelper_2
+    400160: L_hindHelper_3
+    400162: L_hindHelper_4
+    400164: L_hindHelper_IK
+    400166: L_hindKnee_CTRL
+    400168: L_hindLeg_IK
+    400170: L_hindSwivel_pivot
+    400172: L_hindToe1
+    400174: L_hindToe1_tip
+    400176: L_hindToe2
+    400178: L_hindToe2_tip
+    400180: L_hindToe3
+    400182: L_hindToe3_tip
+    400184: L_hindToe4
+    400186: L_hindToe4_tip
+    400188: L_hindToe_IK
+    400190: L_hindToeTap_pivot
+    400192: L_hindToeTip_pivot
+    400194: L_hip
+    400196: L_hip_CTRL
+    400198: L_hip_offset
+    400200: L_knee
+    400202: L_shoulder
+    400204: L_shoulder_CTRL
+    400206: L_shoulder_offset
+    400208: leftEye
+    400210: meshGroup
+    400212: midBack_cluster
+    400214: midBack_CTRL
+    400216: midBack_offset
+    400218: neck
+    400220: neck_CTRL
+    400222: neck_offset
+    400224: nose
+    400226: nose_CTRL
+    400228: nose_offset
+    400230: nose_tip
+    400232: R_ear_1
+    400234: R_ear_1_CTRL
+    400236: R_ear_1_offset
+    400238: R_ear_2
+    400240: R_ear_2_CTRL
+    400242: R_ear_2_offset
+    400244: R_ear_3
+    400246: R_ear_3_CTRL
+    400248: R_ear_3_offset
+    400250: R_ear_4
+    400252: R_ear_4_CTRL
+    400254: R_ear_4_offset
+    400256: R_ear_5
+    400258: R_ear_5_CTRL
+    400260: R_ear_5_offset
+    400262: R_ear_6
+    400264: R_ear_6_CTRL
+    400266: R_ear_6_offset
+    400268: R_ear_tip
+    400270: R_elbow
+    400272: R_eye
+    400274: R_front_distance
+    400276: R_front_measureEnd
+    400278: R_front_measureStart
+    400280: R_front_paw
+    400282: R_front_toe_tip
+    400284: R_front_toes
+    400286: R_frontAnkle_pivot
+    400288: R_frontElbow_CTRL
+    400290: R_frontFlex_pivot
+    400292: R_frontFoot_CTRL
+    400294: R_frontFoot_IK
+    400296: R_frontLeg_IK
+    400298: R_frontSwivel_pivot
+    400300: R_frontToe1
+    400302: R_frontToe1_tip
+    400304: R_frontToe2
+    400306: R_frontToe2_tip
+    400308: R_frontToe3
+    400310: R_frontToe3_tip
+    400312: R_frontToe4
+    400314: R_frontToe4_tip
+    400316: R_frontToes_IK
+    400318: R_frontToeTap_pivot
+    400320: R_frontToeTip_pivot
+    400322: R_hind_distance
+    400324: R_hind_measureEnd
+    400326: R_hind_measureStart
+    400328: R_hind_paw
+    400330: R_hind_toe_tip
+    400332: R_hind_toes
+    400334: R_hindAnkle_IK
+    400336: R_hindFlex_offset
+    400338: R_hindFlex_pivot
+    400340: R_hindFoot_CTRL
+    400342: R_hindHelper_1
+    400344: R_hindHelper_2
+    400346: R_hindHelper_3
+    400348: R_hindHelper_4
+    400350: R_hindHelper_IK
+    400352: R_hindKnee_CTRL
+    400354: R_hindLeg_IK
+    400356: R_hindSwivel_pivot
+    400358: R_hindToe1
+    400360: R_hindToe1_tip
+    400362: R_hindToe2
+    400364: R_hindToe2_tip
+    400366: R_hindToe3
+    400368: R_hindToe3_tip
+    400370: R_hindToe4
+    400372: R_hindToe4_tip
+    400374: R_hindToe_IK
+    400376: R_hindToeTap_pivot
+    400378: R_hindToeTip_pivot
+    400380: R_hip
+    400382: R_hip_CTRL
+    400384: R_hip_offset
+    400386: R_knee
+    400388: R_shoulder
+    400390: R_shoulder_CTRL
+    400392: R_shoulder_offset
+    400394: rigGroup
+    400396: rightEye
+    400398: root
+    400400: skeletonGroup
+    400402: snout_1
+    400404: snout_1_CTRL
+    400406: snout_1_offset
+    400408: snout_2
+    400410: snout_2_CTRL
+    400412: snout_2_offset
+    400414: snout_3
+    400416: snout_3_CTRL
+    400418: snout_3_offset
+    400420: superMover
+    400422: tag
+    400424: tag 1
+    400426: tag_collisionObject
+    400428: tag_dynamicCurve
+    400430: tag_end
+    400432: tag_follicle1
+    400434: tag_hairSystem1
+    400436: tag_hairSystem1Follicles
+    400438: tag_ikHandle
+    400440: tag_originalCurve
+    400442: tag_rigElements
+    400444: tagClip
+    400446: tail2_IK_CTRL
+    400448: tail2_IK_offset
+    400450: tail3_IK_CTRL
+    400452: tail3_IK_offset
+    400454: tail4_IK_CTRL
+    400456: tail4_IK_offset
+    400458: tail_bound_1
+    400460: tail_bound_2
+    400462: tail_bound_3
+    400464: tail_bound_4
+    400466: tail_bound_5
+    400468: tail_bound_6
+    400470: tail_bound_tip
+    400472: tail_cluster1
+    400474: tail_cluster2
+    400476: tail_cluster3
+    400478: tail_cluster4
+    400480: tail_FK_1
+    400482: tail_FK_1_CTRL
+    400484: tail_FK_1_offset
+    400486: tail_FK_2
+    400488: tail_FK_2_CTRL
+    400490: tail_FK_2_offset
+    400492: tail_FK_3
+    400494: tail_FK_3_CTRL
+    400496: tail_FK_3_offset
+    400498: tail_FK_4
+    400500: tail_FK_4_CTRL
+    400502: tail_FK_4_offset
+    400504: tail_FK_5
+    400506: tail_FK_5_CTRL
+    400508: tail_FK_5_offset
+    400510: tail_FK_6
+    400512: tail_FK_6_CTRL
+    400514: tail_FK_6_offset
+    400516: tail_FK_tip
+    400518: tail_IK_1
+    400520: tail_IK_2
+    400522: tail_IK_3
+    400524: tail_IK_4
+    400526: tail_IK_5
+    400528: tail_IK_6
+    400530: tail_IK_tip
+    400532: tailBase_IK_CTRL
+    400534: tailBase_IK_offset
+    400536: tailCurve
+    400538: tailIK
+    400540: upperBack_cluster
+    400542: upperBack_CTRL
+    400544: upperBack_offset
+    4300000: leftEye
+    4300002: rightEye
+    4300004: collar
+    4300006: tagClip
+    4300008: tag
+    4300010: body
+    4300012: tag_collisionObject
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: body
+    13700002: collar
+    13700004: leftEye
+    13700006: rightEye
+    13700008: tag
+    13700010: tag_collisionObject
+    13700012: tagClip
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 381
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: controlGrp
+        weight: 1
+      - path: controlGrp/superMover
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/hips_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/hips_offset/hips_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/hips_offset/hips_CTRL/hips_cluster
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/hips_offset/hips_CTRL/L_hip_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/hips_offset/hips_CTRL/L_hip_offset/L_hip_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/hips_offset/hips_CTRL/R_hip_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/hips_offset/hips_CTRL/R_hip_offset/R_hip_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/hips_offset/hips_CTRL/tail_FK_1_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/hips_offset/hips_CTRL/tail_FK_1_offset/tail_FK_1_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/hips_offset/hips_CTRL/tail_FK_1_offset/tail_FK_1_CTRL/tail_FK_2_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/hips_offset/hips_CTRL/tail_FK_1_offset/tail_FK_1_CTRL/tail_FK_2_offset/tail_FK_2_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/hips_offset/hips_CTRL/tail_FK_1_offset/tail_FK_1_CTRL/tail_FK_2_offset/tail_FK_2_CTRL/tail_FK_3_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/hips_offset/hips_CTRL/tail_FK_1_offset/tail_FK_1_CTRL/tail_FK_2_offset/tail_FK_2_CTRL/tail_FK_3_offset/tail_FK_3_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/hips_offset/hips_CTRL/tail_FK_1_offset/tail_FK_1_CTRL/tail_FK_2_offset/tail_FK_2_CTRL/tail_FK_3_offset/tail_FK_3_CTRL/tail_FK_4_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/hips_offset/hips_CTRL/tail_FK_1_offset/tail_FK_1_CTRL/tail_FK_2_offset/tail_FK_2_CTRL/tail_FK_3_offset/tail_FK_3_CTRL/tail_FK_4_offset/tail_FK_4_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/hips_offset/hips_CTRL/tail_FK_1_offset/tail_FK_1_CTRL/tail_FK_2_offset/tail_FK_2_CTRL/tail_FK_3_offset/tail_FK_3_CTRL/tail_FK_4_offset/tail_FK_4_CTRL/tail_FK_5_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/hips_offset/hips_CTRL/tail_FK_1_offset/tail_FK_1_CTRL/tail_FK_2_offset/tail_FK_2_CTRL/tail_FK_3_offset/tail_FK_3_CTRL/tail_FK_4_offset/tail_FK_4_CTRL/tail_FK_5_offset/tail_FK_5_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/hips_offset/hips_CTRL/tail_FK_1_offset/tail_FK_1_CTRL/tail_FK_2_offset/tail_FK_2_CTRL/tail_FK_3_offset/tail_FK_3_CTRL/tail_FK_4_offset/tail_FK_4_CTRL/tail_FK_5_offset/tail_FK_5_CTRL/tail_FK_6_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/hips_offset/hips_CTRL/tail_FK_1_offset/tail_FK_1_CTRL/tail_FK_2_offset/tail_FK_2_CTRL/tail_FK_3_offset/tail_FK_3_CTRL/tail_FK_4_offset/tail_FK_4_CTRL/tail_FK_5_offset/tail_FK_5_CTRL/tail_FK_6_offset/tail_FK_6_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/hips_offset/hips_CTRL/tailBase_IK_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/hips_offset/hips_CTRL/tailBase_IK_offset/tailBase_IK_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/L_shoulder_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/L_shoulder_offset/L_shoulder_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/L_ear_1_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/L_ear_1_offset/L_ear_1_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/L_ear_1_offset/L_ear_1_CTRL/L_ear_2_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/L_ear_1_offset/L_ear_1_CTRL/L_ear_2_offset/L_ear_2_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/L_ear_1_offset/L_ear_1_CTRL/L_ear_2_offset/L_ear_2_CTRL/L_ear_3_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/L_ear_1_offset/L_ear_1_CTRL/L_ear_2_offset/L_ear_2_CTRL/L_ear_3_offset/L_ear_3_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/L_ear_1_offset/L_ear_1_CTRL/L_ear_2_offset/L_ear_2_CTRL/L_ear_3_offset/L_ear_3_CTRL/L_ear_4_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/L_ear_1_offset/L_ear_1_CTRL/L_ear_2_offset/L_ear_2_CTRL/L_ear_3_offset/L_ear_3_CTRL/L_ear_4_offset/L_ear_4_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/L_ear_1_offset/L_ear_1_CTRL/L_ear_2_offset/L_ear_2_CTRL/L_ear_3_offset/L_ear_3_CTRL/L_ear_4_offset/L_ear_4_CTRL/L_ear_5_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/L_ear_1_offset/L_ear_1_CTRL/L_ear_2_offset/L_ear_2_CTRL/L_ear_3_offset/L_ear_3_CTRL/L_ear_4_offset/L_ear_4_CTRL/L_ear_5_offset/L_ear_5_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/L_ear_1_offset/L_ear_1_CTRL/L_ear_2_offset/L_ear_2_CTRL/L_ear_3_offset/L_ear_3_CTRL/L_ear_4_offset/L_ear_4_CTRL/L_ear_5_offset/L_ear_5_CTRL/L_ear_6_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/L_ear_1_offset/L_ear_1_CTRL/L_ear_2_offset/L_ear_2_CTRL/L_ear_3_offset/L_ear_3_CTRL/L_ear_4_offset/L_ear_4_CTRL/L_ear_5_offset/L_ear_5_CTRL/L_ear_6_offset/L_ear_6_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/R_ear_1_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/R_ear_1_offset/R_ear_1_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/R_ear_1_offset/R_ear_1_CTRL/R_ear_2_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/R_ear_1_offset/R_ear_1_CTRL/R_ear_2_offset/R_ear_2_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/R_ear_1_offset/R_ear_1_CTRL/R_ear_2_offset/R_ear_2_CTRL/R_ear_3_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/R_ear_1_offset/R_ear_1_CTRL/R_ear_2_offset/R_ear_2_CTRL/R_ear_3_offset/R_ear_3_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/R_ear_1_offset/R_ear_1_CTRL/R_ear_2_offset/R_ear_2_CTRL/R_ear_3_offset/R_ear_3_CTRL/R_ear_4_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/R_ear_1_offset/R_ear_1_CTRL/R_ear_2_offset/R_ear_2_CTRL/R_ear_3_offset/R_ear_3_CTRL/R_ear_4_offset/R_ear_4_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/R_ear_1_offset/R_ear_1_CTRL/R_ear_2_offset/R_ear_2_CTRL/R_ear_3_offset/R_ear_3_CTRL/R_ear_4_offset/R_ear_4_CTRL/R_ear_5_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/R_ear_1_offset/R_ear_1_CTRL/R_ear_2_offset/R_ear_2_CTRL/R_ear_3_offset/R_ear_3_CTRL/R_ear_4_offset/R_ear_4_CTRL/R_ear_5_offset/R_ear_5_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/R_ear_1_offset/R_ear_1_CTRL/R_ear_2_offset/R_ear_2_CTRL/R_ear_3_offset/R_ear_3_CTRL/R_ear_4_offset/R_ear_4_CTRL/R_ear_5_offset/R_ear_5_CTRL/R_ear_6_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/R_ear_1_offset/R_ear_1_CTRL/R_ear_2_offset/R_ear_2_CTRL/R_ear_3_offset/R_ear_3_CTRL/R_ear_4_offset/R_ear_4_CTRL/R_ear_5_offset/R_ear_5_CTRL/R_ear_6_offset/R_ear_6_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/snout_1_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/snout_1_offset/snout_1_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/snout_1_offset/snout_1_CTRL/snout_2_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/snout_1_offset/snout_1_CTRL/snout_2_offset/snout_2_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/snout_1_offset/snout_1_CTRL/snout_2_offset/snout_2_CTRL/snout_3_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/snout_1_offset/snout_1_CTRL/snout_2_offset/snout_2_CTRL/snout_3_offset/snout_3_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/snout_1_offset/snout_1_CTRL/snout_2_offset/snout_2_CTRL/snout_3_offset/snout_3_CTRL/nose_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/neck_offset/neck_CTRL/head_offset/head_CTRL/snout_1_offset/snout_1_CTRL/snout_2_offset/snout_2_CTRL/snout_3_offset/snout_3_CTRL/nose_offset/nose_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/R_shoulder_offset
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/R_shoulder_offset/R_shoulder_CTRL
+        weight: 1
+      - path: controlGrp/superMover/body_CTRL/upperBack_offset/upperBack_CTRL/upperBack_cluster
+        weight: 1
+      - path: controlGrp/superMover/L_frontFoot_CTRL
+        weight: 1
+      - path: controlGrp/superMover/L_frontFoot_CTRL/L_frontAnkle_pivot
+        weight: 1
+      - path: controlGrp/superMover/L_frontFoot_CTRL/L_frontAnkle_pivot/L_frontToeTip_pivot
+        weight: 1
+      - path: controlGrp/superMover/L_frontFoot_CTRL/L_frontAnkle_pivot/L_frontToeTip_pivot/L_frontSwivel_pivot
+        weight: 1
+      - path: controlGrp/superMover/L_frontFoot_CTRL/L_frontAnkle_pivot/L_frontToeTip_pivot/L_frontSwivel_pivot/L_frontFlex_pivot
+        weight: 1
+      - path: controlGrp/superMover/L_frontFoot_CTRL/L_frontAnkle_pivot/L_frontToeTip_pivot/L_frontSwivel_pivot/L_frontFlex_pivot/L_frontLeg_IK
+        weight: 1
+      - path: controlGrp/superMover/L_frontFoot_CTRL/L_frontAnkle_pivot/L_frontToeTip_pivot/L_frontSwivel_pivot/L_frontToeTap_pivot
+        weight: 1
+      - path: controlGrp/superMover/L_frontFoot_CTRL/L_frontAnkle_pivot/L_frontToeTip_pivot/L_frontSwivel_pivot/L_frontToeTap_pivot/L_frontFoot_IK
+        weight: 1
+      - path: controlGrp/superMover/L_frontFoot_CTRL/L_frontAnkle_pivot/L_frontToeTip_pivot/L_frontSwivel_pivot/L_frontToeTap_pivot/L_frontToes_IK
+        weight: 1
+      - path: controlGrp/superMover/L_frontFoot_CTRL/L_frontElbow_CTRL
+        weight: 1
+      - path: controlGrp/superMover/L_hindFoot_CTRL
+        weight: 1
+      - path: controlGrp/superMover/L_hindFoot_CTRL/L_hindSwivel_pivot
+        weight: 1
+      - path: controlGrp/superMover/L_hindFoot_CTRL/L_hindSwivel_pivot/L_hindKnee_CTRL
+        weight: 1
+      - path: controlGrp/superMover/L_hindFoot_CTRL/L_hindSwivel_pivot/L_hindToeTip_pivot
+        weight: 1
+      - path: controlGrp/superMover/L_hindFoot_CTRL/L_hindSwivel_pivot/L_hindToeTip_pivot/L_hindFlex_offset
+        weight: 1
+      - path: controlGrp/superMover/L_hindFoot_CTRL/L_hindSwivel_pivot/L_hindToeTip_pivot/L_hindFlex_offset/L_hindFlex_pivot
+        weight: 1
+      - path: controlGrp/superMover/L_hindFoot_CTRL/L_hindSwivel_pivot/L_hindToeTip_pivot/L_hindFlex_offset/L_hindFlex_pivot/L_hindAnkle_IK
+        weight: 1
+      - path: controlGrp/superMover/L_hindFoot_CTRL/L_hindSwivel_pivot/L_hindToeTip_pivot/L_hindFlex_offset/L_hindFlex_pivot/L_hindLeg_IK
+        weight: 1
+      - path: controlGrp/superMover/L_hindFoot_CTRL/L_hindSwivel_pivot/L_hindToeTip_pivot/L_hindToeTap_pivot
+        weight: 1
+      - path: controlGrp/superMover/L_hindFoot_CTRL/L_hindSwivel_pivot/L_hindToeTip_pivot/L_hindToeTap_pivot/L_hindHelper_IK
+        weight: 1
+      - path: controlGrp/superMover/L_hindFoot_CTRL/L_hindSwivel_pivot/L_hindToeTip_pivot/L_hindToeTap_pivot/L_hindToe_IK
+        weight: 1
+      - path: controlGrp/superMover/midBack_offset
+        weight: 1
+      - path: controlGrp/superMover/midBack_offset/midBack_CTRL
+        weight: 1
+      - path: controlGrp/superMover/midBack_offset/midBack_CTRL/midBack_cluster
+        weight: 1
+      - path: controlGrp/superMover/R_frontFoot_CTRL
+        weight: 1
+      - path: controlGrp/superMover/R_frontFoot_CTRL/R_frontAnkle_pivot
+        weight: 1
+      - path: controlGrp/superMover/R_frontFoot_CTRL/R_frontAnkle_pivot/R_frontToeTip_pivot
+        weight: 1
+      - path: controlGrp/superMover/R_frontFoot_CTRL/R_frontAnkle_pivot/R_frontToeTip_pivot/R_frontSwivel_pivot
+        weight: 1
+      - path: controlGrp/superMover/R_frontFoot_CTRL/R_frontAnkle_pivot/R_frontToeTip_pivot/R_frontSwivel_pivot/R_frontFlex_pivot
+        weight: 1
+      - path: controlGrp/superMover/R_frontFoot_CTRL/R_frontAnkle_pivot/R_frontToeTip_pivot/R_frontSwivel_pivot/R_frontFlex_pivot/R_frontLeg_IK
+        weight: 1
+      - path: controlGrp/superMover/R_frontFoot_CTRL/R_frontAnkle_pivot/R_frontToeTip_pivot/R_frontSwivel_pivot/R_frontToeTap_pivot
+        weight: 1
+      - path: controlGrp/superMover/R_frontFoot_CTRL/R_frontAnkle_pivot/R_frontToeTip_pivot/R_frontSwivel_pivot/R_frontToeTap_pivot/R_frontFoot_IK
+        weight: 1
+      - path: controlGrp/superMover/R_frontFoot_CTRL/R_frontAnkle_pivot/R_frontToeTip_pivot/R_frontSwivel_pivot/R_frontToeTap_pivot/R_frontToes_IK
+        weight: 1
+      - path: controlGrp/superMover/R_frontFoot_CTRL/R_frontElbow_CTRL
+        weight: 1
+      - path: controlGrp/superMover/R_hindFoot_CTRL
+        weight: 1
+      - path: controlGrp/superMover/R_hindFoot_CTRL/R_hindSwivel_pivot
+        weight: 1
+      - path: controlGrp/superMover/R_hindFoot_CTRL/R_hindSwivel_pivot/R_hindKnee_CTRL
+        weight: 1
+      - path: controlGrp/superMover/R_hindFoot_CTRL/R_hindSwivel_pivot/R_hindToeTip_pivot
+        weight: 1
+      - path: controlGrp/superMover/R_hindFoot_CTRL/R_hindSwivel_pivot/R_hindToeTip_pivot/R_hindFlex_offset
+        weight: 1
+      - path: controlGrp/superMover/R_hindFoot_CTRL/R_hindSwivel_pivot/R_hindToeTip_pivot/R_hindFlex_offset/R_hindFlex_pivot
+        weight: 1
+      - path: controlGrp/superMover/R_hindFoot_CTRL/R_hindSwivel_pivot/R_hindToeTip_pivot/R_hindFlex_offset/R_hindFlex_pivot/R_hindAnkle_IK
+        weight: 1
+      - path: controlGrp/superMover/R_hindFoot_CTRL/R_hindSwivel_pivot/R_hindToeTip_pivot/R_hindFlex_offset/R_hindFlex_pivot/R_hindLeg_IK
+        weight: 1
+      - path: controlGrp/superMover/R_hindFoot_CTRL/R_hindSwivel_pivot/R_hindToeTip_pivot/R_hindToeTap_pivot
+        weight: 1
+      - path: controlGrp/superMover/R_hindFoot_CTRL/R_hindSwivel_pivot/R_hindToeTip_pivot/R_hindToeTap_pivot/R_hindHelper_IK
+        weight: 1
+      - path: controlGrp/superMover/R_hindFoot_CTRL/R_hindSwivel_pivot/R_hindToeTip_pivot/R_hindToeTap_pivot/R_hindToe_IK
+        weight: 1
+      - path: controlGrp/superMover/tail2_IK_offset
+        weight: 1
+      - path: controlGrp/superMover/tail2_IK_offset/tail2_IK_CTRL
+        weight: 1
+      - path: controlGrp/superMover/tail3_IK_offset
+        weight: 1
+      - path: controlGrp/superMover/tail3_IK_offset/tail3_IK_CTRL
+        weight: 1
+      - path: controlGrp/superMover/tail4_IK_offset
+        weight: 1
+      - path: controlGrp/superMover/tail4_IK_offset/tail4_IK_CTRL
+        weight: 1
+      - path: meshGroup
+        weight: 1
+      - path: meshGroup/body
+        weight: 1
+      - path: meshGroup/collar
+        weight: 1
+      - path: meshGroup/leftEye
+        weight: 1
+      - path: meshGroup/rightEye
+        weight: 1
+      - path: meshGroup/tag
+        weight: 1
+      - path: meshGroup/tagClip
+        weight: 1
+      - path: rigGroup
+        weight: 1
+      - path: rigGroup/backCurve
+        weight: 1
+      - path: rigGroup/backIK
+        weight: 1
+      - path: rigGroup/blendShapes
+        weight: 1
+      - path: rigGroup/L_front_distance
+        weight: 1
+      - path: rigGroup/L_front_measureEnd
+        weight: 1
+      - path: rigGroup/L_front_measureStart
+        weight: 1
+      - path: rigGroup/L_hind_distance
+        weight: 1
+      - path: rigGroup/L_hind_measureEnd
+        weight: 1
+      - path: rigGroup/L_hind_measureStart
+        weight: 1
+      - path: rigGroup/R_front_distance
+        weight: 1
+      - path: rigGroup/R_front_measureEnd
+        weight: 1
+      - path: rigGroup/R_front_measureStart
+        weight: 1
+      - path: rigGroup/R_hind_distance
+        weight: 1
+      - path: rigGroup/R_hind_measureEnd
+        weight: 1
+      - path: rigGroup/R_hind_measureStart
+        weight: 1
+      - path: rigGroup/tag_rigElements
+        weight: 1
+      - path: rigGroup/tag_rigElements/tag_collisionObject
+        weight: 1
+      - path: rigGroup/tag_rigElements/tag_dynamicCurve
+        weight: 1
+      - path: rigGroup/tag_rigElements/tag_hairSystem1
+        weight: 1
+      - path: rigGroup/tag_rigElements/tag_hairSystem1Follicles
+        weight: 1
+      - path: rigGroup/tag_rigElements/tag_hairSystem1Follicles/tag_follicle1
+        weight: 1
+      - path: rigGroup/tag_rigElements/tag_hairSystem1Follicles/tag_follicle1/tag_originalCurve
+        weight: 1
+      - path: rigGroup/tag_rigElements/tag_ikHandle
+        weight: 1
+      - path: rigGroup/tail_cluster1
+        weight: 1
+      - path: rigGroup/tail_cluster2
+        weight: 1
+      - path: rigGroup/tail_cluster3
+        weight: 1
+      - path: rigGroup/tail_cluster4
+        weight: 1
+      - path: rigGroup/tailCurve
+        weight: 1
+      - path: rigGroup/tailIK
+        weight: 1
+      - path: skeletonGroup
+        weight: 1
+      - path: skeletonGroup/root
+        weight: 1
+      - path: skeletonGroup/root/back_1
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/L_shoulder
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/L_shoulder/l_elbow
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/L_shoulder/l_elbow/L_front_paw
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/L_shoulder/l_elbow/L_front_paw/L_front_toes
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/L_shoulder/l_elbow/L_front_paw/L_front_toes/L_front_toe_tip
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/L_shoulder/l_elbow/L_front_paw/L_front_toes/L_frontToe1
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/L_shoulder/l_elbow/L_front_paw/L_front_toes/L_frontToe1/L_frontToe1_tip
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/L_shoulder/l_elbow/L_front_paw/L_front_toes/L_frontToe2
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/L_shoulder/l_elbow/L_front_paw/L_front_toes/L_frontToe2/L_frontToe2_tip
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/L_shoulder/l_elbow/L_front_paw/L_front_toes/L_frontToe3
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/L_shoulder/l_elbow/L_front_paw/L_front_toes/L_frontToe3/L_frontToe3_tip
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/L_shoulder/l_elbow/L_front_paw/L_front_toes/L_frontToe4
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/L_shoulder/l_elbow/L_front_paw/L_front_toes/L_frontToe4/L_frontToe4_tip
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head/head_tip
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head/L_ear_1
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head/L_ear_1/L_ear_2
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head/L_ear_1/L_ear_2/L_ear_3
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head/L_ear_1/L_ear_2/L_ear_3/L_ear_4
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head/L_ear_1/L_ear_2/L_ear_3/L_ear_4/L_ear_5
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head/L_ear_1/L_ear_2/L_ear_3/L_ear_4/L_ear_5/L_ear_6
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head/L_ear_1/L_ear_2/L_ear_3/L_ear_4/L_ear_5/L_ear_6/L_ear_tip
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head/L_eye
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head/R_ear_1
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head/R_ear_1/R_ear_2
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head/R_ear_1/R_ear_2/R_ear_3
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head/R_ear_1/R_ear_2/R_ear_3/R_ear_4
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head/R_ear_1/R_ear_2/R_ear_3/R_ear_4/R_ear_5
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head/R_ear_1/R_ear_2/R_ear_3/R_ear_4/R_ear_5/R_ear_6
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head/R_ear_1/R_ear_2/R_ear_3/R_ear_4/R_ear_5/R_ear_6/R_ear_tip
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head/R_eye
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head/snout_1
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head/snout_1/snout_2
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head/snout_1/snout_2/snout_3
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head/snout_1/snout_2/snout_3/nose
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/head/snout_1/snout_2/snout_3/nose/nose_tip
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/tag
+          1
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/neck/tag
+          1/tag_end
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/R_shoulder
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/R_shoulder/R_elbow
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/R_shoulder/R_elbow/R_front_paw
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/R_shoulder/R_elbow/R_front_paw/R_front_toes
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/R_shoulder/R_elbow/R_front_paw/R_front_toes/R_front_toe_tip
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/R_shoulder/R_elbow/R_front_paw/R_front_toes/R_frontToe1
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/R_shoulder/R_elbow/R_front_paw/R_front_toes/R_frontToe1/R_frontToe1_tip
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/R_shoulder/R_elbow/R_front_paw/R_front_toes/R_frontToe2
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/R_shoulder/R_elbow/R_front_paw/R_front_toes/R_frontToe2/R_frontToe2_tip
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/R_shoulder/R_elbow/R_front_paw/R_front_toes/R_frontToe3
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/R_shoulder/R_elbow/R_front_paw/R_front_toes/R_frontToe3/R_frontToe3_tip
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/R_shoulder/R_elbow/R_front_paw/R_front_toes/R_frontToe4
+        weight: 1
+      - path: skeletonGroup/root/back_1/back_2/back_3/back_4/back_5/back_6/back_7/back_stabilize/R_shoulder/R_elbow/R_front_paw/R_front_toes/R_frontToe4/R_frontToe4_tip
+        weight: 1
+      - path: skeletonGroup/root/L_hindHelper_1
+        weight: 1
+      - path: skeletonGroup/root/L_hindHelper_1/L_hindHelper_2
+        weight: 1
+      - path: skeletonGroup/root/L_hindHelper_1/L_hindHelper_2/L_hindHelper_3
+        weight: 1
+      - path: skeletonGroup/root/L_hindHelper_1/L_hindHelper_2/L_hindHelper_3/L_hindHelper_4
+        weight: 1
+      - path: skeletonGroup/root/L_hip
+        weight: 1
+      - path: skeletonGroup/root/L_hip/L_knee
+        weight: 1
+      - path: skeletonGroup/root/L_hip/L_knee/L_hind_paw
+        weight: 1
+      - path: skeletonGroup/root/L_hip/L_knee/L_hind_paw/L_hind_toes
+        weight: 1
+      - path: skeletonGroup/root/L_hip/L_knee/L_hind_paw/L_hind_toes/L_hind_toe_tip
+        weight: 1
+      - path: skeletonGroup/root/L_hip/L_knee/L_hind_paw/L_hind_toes/L_hindToe1
+        weight: 1
+      - path: skeletonGroup/root/L_hip/L_knee/L_hind_paw/L_hind_toes/L_hindToe1/L_hindToe1_tip
+        weight: 1
+      - path: skeletonGroup/root/L_hip/L_knee/L_hind_paw/L_hind_toes/L_hindToe2
+        weight: 1
+      - path: skeletonGroup/root/L_hip/L_knee/L_hind_paw/L_hind_toes/L_hindToe2/L_hindToe2_tip
+        weight: 1
+      - path: skeletonGroup/root/L_hip/L_knee/L_hind_paw/L_hind_toes/L_hindToe3
+        weight: 1
+      - path: skeletonGroup/root/L_hip/L_knee/L_hind_paw/L_hind_toes/L_hindToe3/L_hindToe3_tip
+        weight: 1
+      - path: skeletonGroup/root/L_hip/L_knee/L_hind_paw/L_hind_toes/L_hindToe4
+        weight: 1
+      - path: skeletonGroup/root/L_hip/L_knee/L_hind_paw/L_hind_toes/L_hindToe4/L_hindToe4_tip
+        weight: 1
+      - path: skeletonGroup/root/R_hindHelper_1
+        weight: 1
+      - path: skeletonGroup/root/R_hindHelper_1/R_hindHelper_2
+        weight: 1
+      - path: skeletonGroup/root/R_hindHelper_1/R_hindHelper_2/R_hindHelper_3
+        weight: 1
+      - path: skeletonGroup/root/R_hindHelper_1/R_hindHelper_2/R_hindHelper_3/R_hindHelper_4
+        weight: 1
+      - path: skeletonGroup/root/R_hip
+        weight: 1
+      - path: skeletonGroup/root/R_hip/R_knee
+        weight: 1
+      - path: skeletonGroup/root/R_hip/R_knee/R_hind_paw
+        weight: 1
+      - path: skeletonGroup/root/R_hip/R_knee/R_hind_paw/R_hind_toes
+        weight: 1
+      - path: skeletonGroup/root/R_hip/R_knee/R_hind_paw/R_hind_toes/R_hind_toe_tip
+        weight: 1
+      - path: skeletonGroup/root/R_hip/R_knee/R_hind_paw/R_hind_toes/R_hindToe1
+        weight: 1
+      - path: skeletonGroup/root/R_hip/R_knee/R_hind_paw/R_hind_toes/R_hindToe1/R_hindToe1_tip
+        weight: 1
+      - path: skeletonGroup/root/R_hip/R_knee/R_hind_paw/R_hind_toes/R_hindToe2
+        weight: 1
+      - path: skeletonGroup/root/R_hip/R_knee/R_hind_paw/R_hind_toes/R_hindToe2/R_hindToe2_tip
+        weight: 1
+      - path: skeletonGroup/root/R_hip/R_knee/R_hind_paw/R_hind_toes/R_hindToe3
+        weight: 1
+      - path: skeletonGroup/root/R_hip/R_knee/R_hind_paw/R_hind_toes/R_hindToe3/R_hindToe3_tip
+        weight: 1
+      - path: skeletonGroup/root/R_hip/R_knee/R_hind_paw/R_hind_toes/R_hindToe4
+        weight: 1
+      - path: skeletonGroup/root/R_hip/R_knee/R_hind_paw/R_hind_toes/R_hindToe4/R_hindToe4_tip
+        weight: 1
+      - path: skeletonGroup/root/tail_bound_1
+        weight: 1
+      - path: skeletonGroup/root/tail_bound_1/tail_bound_2
+        weight: 1
+      - path: skeletonGroup/root/tail_bound_1/tail_bound_2/tail_bound_3
+        weight: 1
+      - path: skeletonGroup/root/tail_bound_1/tail_bound_2/tail_bound_3/tail_bound_4
+        weight: 1
+      - path: skeletonGroup/root/tail_bound_1/tail_bound_2/tail_bound_3/tail_bound_4/tail_bound_5
+        weight: 1
+      - path: skeletonGroup/root/tail_bound_1/tail_bound_2/tail_bound_3/tail_bound_4/tail_bound_5/tail_bound_6
+        weight: 1
+      - path: skeletonGroup/root/tail_bound_1/tail_bound_2/tail_bound_3/tail_bound_4/tail_bound_5/tail_bound_6/tail_bound_tip
+        weight: 1
+      - path: skeletonGroup/root/tail_FK_1
+        weight: 1
+      - path: skeletonGroup/root/tail_FK_1/tail_FK_2
+        weight: 1
+      - path: skeletonGroup/root/tail_FK_1/tail_FK_2/tail_FK_3
+        weight: 1
+      - path: skeletonGroup/root/tail_FK_1/tail_FK_2/tail_FK_3/tail_FK_4
+        weight: 1
+      - path: skeletonGroup/root/tail_FK_1/tail_FK_2/tail_FK_3/tail_FK_4/tail_FK_5
+        weight: 1
+      - path: skeletonGroup/root/tail_FK_1/tail_FK_2/tail_FK_3/tail_FK_4/tail_FK_5/tail_FK_6
+        weight: 1
+      - path: skeletonGroup/root/tail_FK_1/tail_FK_2/tail_FK_3/tail_FK_4/tail_FK_5/tail_FK_6/tail_FK_tip
+        weight: 1
+      - path: skeletonGroup/root/tail_IK_1
+        weight: 1
+      - path: skeletonGroup/root/tail_IK_1/tail_IK_2
+        weight: 1
+      - path: skeletonGroup/root/tail_IK_1/tail_IK_2/tail_IK_3
+        weight: 1
+      - path: skeletonGroup/root/tail_IK_1/tail_IK_2/tail_IK_3/tail_IK_4
+        weight: 1
+      - path: skeletonGroup/root/tail_IK_1/tail_IK_2/tail_IK_3/tail_IK_4/tail_IK_5
+        weight: 1
+      - path: skeletonGroup/root/tail_IK_1/tail_IK_2/tail_IK_3/tail_IK_4/tail_IK_5/tail_IK_6
+        weight: 1
+      - path: skeletonGroup/root/tail_IK_1/tail_IK_2/tail_IK_3/tail_IK_4/tail_IK_5/tail_IK_6/tail_IK_tip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

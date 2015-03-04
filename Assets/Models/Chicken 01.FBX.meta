@@ -1,0 +1,110 @@
+fileFormatVersion: 2
+guid: 7678223654539c6409fabd03e288ad0c
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: BN_Body
+    100002: BN_Head
+    100004: BN_Hip
+    100006: BN_Jaw
+    100008: BN_LFoot
+    100010: BN_LHip
+    100012: BN_LHipConnect
+    100014: BN_LLeg
+    100016: BN_LWing0
+    100018: BN_LWing1
+    100020: BN_LWingConnect
+    100022: BN_Neck0
+    100024: BN_Neck1
+    100026: BN_RFoot
+    100028: BN_RHip
+    100030: BN_RHipConnect
+    100032: BN_RLeg
+    100034: BN_Rump
+    100036: BN_RWing0
+    100038: BN_RWing1
+    100040: BN_RWingConnect
+    100042: BN_Tailfeathers
+    100044: //RootNode
+    100046: Chicken mark 006 for bones
+    400000: BN_Body
+    400002: BN_Head
+    400004: BN_Hip
+    400006: BN_Jaw
+    400008: BN_LFoot
+    400010: BN_LHip
+    400012: BN_LHipConnect
+    400014: BN_LLeg
+    400016: BN_LWing0
+    400018: BN_LWing1
+    400020: BN_LWingConnect
+    400022: BN_Neck0
+    400024: BN_Neck1
+    400026: BN_RFoot
+    400028: BN_RHip
+    400030: BN_RHipConnect
+    400032: BN_RLeg
+    400034: BN_Rump
+    400036: BN_RWing0
+    400038: BN_RWing1
+    400040: BN_RWingConnect
+    400042: BN_Tailfeathers
+    400044: //RootNode
+    400046: Chicken mark 006 for bones
+    4300000: Chicken mark 006 for bones
+    9500000: //RootNode
+    13700000: Chicken mark 006 for bones
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
