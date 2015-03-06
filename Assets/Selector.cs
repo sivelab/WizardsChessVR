@@ -44,6 +44,9 @@ public class Selector : MonoBehaviour
                                         interaction = interact;
                                         interaction.Hover ();
                                 }
+                                if (Input.GetButtonDown ("Fire1")) {
+                                        interact.Action ();
+                                }
                         } else {
                                 if (interaction != null) {
                                         interaction.Unhover ();
