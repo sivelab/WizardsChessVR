@@ -12,17 +12,16 @@ public class Board : MonoBehaviour
 
         enum Side
         {
+                None,
                 Black,
                 White,
         };
 
-        enum SquareStatus
+        enum SquarePiece
         {
-                Empty,
-                Black,
-                White,
-                BlackKing,
-                WhiteKing,
+                None,
+                Pawn,
+                King,
         };
 
         enum TurnStatus
@@ -37,18 +36,22 @@ public class Board : MonoBehaviour
         public Material evenSquares;
         public Material hover;
         public Material select;
+        public Material highlight;
         public GameObject WhitePawnPrefab;
         public GameObject BlackPawnPrefab;
 
         private GameObject[,] squares = new GameObject[8, 8];
         private GameObject[,] pieces = new GameObject[8, 8];
-        private SquareStatus[,] statuses = new SquareStatus[8, 8];
+        private Side[,] squareSide = new Side[8, 8];
+        private SquarePiece[,] squarePiece = new SquarePiece[8, 8];
         private Side turn;
+        private TurnStatus turnStatus;
         private Dictionary<NetworkPlayer, Side> playerSides = new Dictionary<NetworkPlayer, Side> ();
         
         
         void Start ()
         {
+                networkView.group = 2;
                 for (int x = 0; x < 8; x++) {
                         for (int z = 0; z < 8; z++) {
                                 GameObject square = GameObject.CreatePrimitive (PrimitiveType.Quad);
@@ -56,7 +59,7 @@ public class Board : MonoBehaviour
                                 square.transform.eulerAngles = new Vector3 (90, 0, 0);
                                 square.transform.parent = transform;
                                 square.transform.localPosition = new Vector3 (x, 0, z);
-                                setSquareState (x, z, State.Normal);
+                                square.transform.localScale = new Vector3 (1, 1, 1);
                         }
                 }
                 ClientAction ("NewGame", Network.player);
@@ -84,10 +87,62 @@ public class Board : MonoBehaviour
         [RPC] 
         public void SelectSquare (int x, int z)
         {
-                setSquareState (Selectx, Selectz, State.Normal);
-                Selectx = x;
-                Selectz = z;
-                setSquareState (Selectx, Selectz, State.Selected);
+                if (x == -1)
+                        return;
+                if (turnStatus == TurnStatus.Select) {
+                        if (squareSide [x, z] == turn) {
+                                turnStatus = TurnStatus.Move;
+                                Selectx = x;
+                                Selectz = z;
+                        }
+                } else if (turnStatus == TurnStatus.Move && squareSide [x, z] == turn) {
+                        Selectx = x;
+                        Selectz = z;
+                } else if (canMove (x, z, turnStatus == TurnStatus.ContinueMove)) {
+                        bool wasJump = Selectx - x < -1 || Selectx - x > 1;
+                        squareSide [x, z] = turn;
+                        squarePiece [x, z] = squarePiece [Selectx, Selectz];
+                        squareSide [Selectx, Selectz] = Side.None;
+                        squarePiece [Selectx, Selectz] = SquarePiece.None;
+
+                        pieces [Selectx, Selectz].transform.localPosition = new Vector3 (x, 0, z);
+                        pieces [x, z] = pieces [Selectx, Selectz];
+                        pieces [Selectx, Selectz] = null;
+
+                        if (wasJump) {
+                                int mx = (x + Selectx) / 2;
+                                int mz = (z + Selectz) / 2;
+                                Destroy (pieces [mx, mz]);
+                                pieces [mx, mz] = null;
+                                squareSide [mx, mz] = Side.None;
+                                squarePiece [mx, mz] = SquarePiece.None;
+                        }
+                        Selectx = x;
+                        Selectz = z;
+                        if (turn == Side.Black && x == 0) {
+                                squarePiece [x, z] = SquarePiece.King;
+                                pieces [x, z].transform.localScale = new Vector3 (1, 2, 1);
+                        }
+                        if (turn == Side.White && x == 7) {
+                                squarePiece [x, z] = SquarePiece.King;
+                                pieces [x, z].transform.localScale = new Vector3 (1, 2, 1);
+                        }
+
+                        if (wasJump && (canMove (x + 2, z + 2, true) || canMove (x + 2, z - 2, true) || canMove (x - 2, z + 2, true) || canMove (x - 2, z - 2, true))) {
+                                turnStatus = TurnStatus.ContinueMove;
+                        } else {
+                                turnStatus = TurnStatus.Select;
+                                turn = otherSide (turn);
+                                Selectx = -1;
+                                Selectz = -1;
+                        }
+                } else if (x == Selectx && z == Selectz) {
+                        //Must be TurnStatus.ContinueMove
+                        turnStatus = TurnStatus.Select;
+                        turn = otherSide (turn);
+                        Selectx = -1;
+                        Selectz = -1;
+                }
         }
 
         [RPC]
@@ -117,7 +172,8 @@ public class Board : MonoBehaviour
 
                 for (int x = 0; x < 8; x++) {
                         for (int z = 0; z < 8; z++) {
-                                statuses [x, z] = SquareStatus.Empty;
+                                squareSide [x, z] = Side.None;
+                                squarePiece [x, z] = SquarePiece.None;
                                 GameObject piece = pieces [x, z];
                                 if (piece != null) {
                                         Destroy (piece);
@@ -128,7 +184,8 @@ public class Board : MonoBehaviour
                 }
                 for (int x = 0; x < 3; x++) {
                         for (int z = (x + 1) % 2; z < 8; z += 2) {
-                                statuses [x, z] = SquareStatus.White;
+                                squareSide [x, z] = Side.White;
+                                squarePiece [x, z] = SquarePiece.Pawn;
                                 GameObject piece = (GameObject)Instantiate (WhitePawnPrefab);
                                 pieces [x, z] = piece;
                                 piece.transform.eulerAngles = new Vector3 (0, 180, 0);
@@ -138,7 +195,8 @@ public class Board : MonoBehaviour
                 }
                 for (int x = 5; x < 8; x++) {
                         for (int z = (x + 1) % 2; z < 8; z += 2) {
-                                statuses [x, z] = SquareStatus.Black;
+                                squareSide [x, z] = Side.Black;
+                                squarePiece [x, z] = SquarePiece.Pawn;
                                 GameObject piece = (GameObject)Instantiate (BlackPawnPrefab);
                                 pieces [x, z] = piece;
                                 piece.transform.eulerAngles = new Vector3 (0, 0, 0);
@@ -147,6 +205,7 @@ public class Board : MonoBehaviour
                         }
                 }
                 turn = Side.Black;
+                turnStatus = TurnStatus.Select;
         }
         
         private int Hoverx = -1;
@@ -159,9 +218,9 @@ public class Board : MonoBehaviour
                         x = -1;
                         z = -1;
                 }
-                setSquareState (Hoverx, Hoverz, State.Normal);
                 Hoverx = x;
                 Hoverz = z;
+
                 if (Input.GetButtonDown ("Fire1")) {
                         if (Network.isServer) {
                                 ClientSelect (x, z, Network.player);
@@ -169,9 +228,6 @@ public class Board : MonoBehaviour
                                 board.networkView.RPC ("ClientSelect", RPCMode.Server, x, z);
                         }
                 }
-                setSquareState (x, z, State.Hover);
-                setSquareState (Selectx, Selectz, State.Selected);
-                squares [0, 0].renderer.material.color = Color.blue;
         }
 
         enum State
@@ -180,24 +236,69 @@ public class Board : MonoBehaviour
                 Hover,
                 Selected}
         ;
-        private void setSquareState (int x, int z, State state)
+
+        void Update ()
         {
-                if (x == -1) {
-                        return;
-                }
-                if (state == State.Normal) {
-                        if ((x + z) % 2 == 0) {
-                                squares [x, z].renderer.material = evenSquares;
-                        } else {
-                                squares [x, z].renderer.material = oddSquares;
+                for (int x = 0; x < 8; x++) {
+                        for (int z = 0; z < 8; z++) {
+                                if (x == Selectx && z == Selectz) {
+                                        squares [x, z].renderer.material = select;
+                                } else if (x == Hoverx && z == Hoverz) {
+                                        squares [x, z].renderer.material = hover;
+                                } else if (turnStatus == TurnStatus.Select && squareSide [x, z] == turn) {
+                                        squares [x, z].renderer.material = highlight;
+                                } else if ((turnStatus == TurnStatus.Move || turnStatus == TurnStatus.ContinueMove) && canMove (x, z, turnStatus == TurnStatus.ContinueMove)) {
+                                        squares [x, z].renderer.material = highlight;
+                                } else if (turnStatus == TurnStatus.ContinueMove && x == Selectx && z == Selectz) {
+                                        squares [x, z].renderer.material = highlight;
+                                } else if ((x + z) % 2 == 0) {
+                                        squares [x, z].renderer.material = evenSquares;
+                                } else {
+                                        squares [x, z].renderer.material = oddSquares;
+                                }
+                                //squares [x, z].renderer.material.SetTextureScale ("Base", new Vector2 (8, 8));
                         }
-                } else if (state == State.Hover) {
-                        if (x != Selectx || z != Selectz) {
-                                squares [x, z].renderer.material = hover;
-                        }
-                } else {
-                        squares [x, z].renderer.material = select;
                 }
-                squares [x, z].renderer.material.SetTextureScale ("Base", new Vector2 (8, 8));
         }
+
+        bool canMove (int x, int z, bool jumpOnly)
+        {
+                if (x < 0 || x >= 8 || z < 0 || z >= 8)
+                        return false;
+                int dx = x - Selectx;
+                int dz = z - Selectz;
+             
+                //Going wrong way
+                if (squarePiece [Selectx, Selectz] == SquarePiece.Pawn && (
+                        (dx > 0 && turn == Side.Black) ||
+                        (dx < 0 && turn == Side.White)))
+                        return false;
+
+                //Going one step, just check move spot
+                if (!jumpOnly && (dx == 1 || dx == -1) && (dz == 1 || dz == -1)) {
+                        return squareSide [x, z] == Side.None;
+                }
+
+                //Going two steps, check move spot and jumping
+                if ((dx == 2 || dx == -2) && (dz == 2 || dz == -2)) {
+                        return squareSide [x, z] == Side.None && Enemy (turn, squareSide [Selectx + dx / 2, Selectz + dz / 2]);
+                }
+
+                return false;
+        }
+
+        bool Enemy (Side a, Side b)
+        {
+                return (a == Side.Black && b == Side.White) || (a == Side.White && b == Side.Black);
+        }
+
+        Side otherSide (Side side)
+        {
+                if (side == Side.Black)
+                        return Side.White;
+                if (side == Side.White)
+                        return Side.Black;
+                return Side.None;
+        }
+
 }

@@ -46,9 +46,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ChangeTracker.cs" />
      <Compile Include="Assets\Classes\Chess.cs" />
      <Compile Include="Assets\Classes\VRPN.cs" />
      <Compile Include="Assets\InteractButton.cs" />
+     <Compile Include="Assets\MakeRelativeEqual.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCameraRig.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCommon.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRDisplay.cs" />
@@ -69,12 +71,15 @@
      <Compile Include="Assets\Scripts\CameraFly.cs" />
      <Compile Include="Assets\Scripts\ChickenController.cs" />
      <Compile Include="Assets\Scripts\PlayerMaker.cs" />
+     <Compile Include="Assets\Scripts\PositionTracker.cs" />
      <Compile Include="Assets\Scripts\TrackPosition.cs" />
      <Compile Include="Assets\Scripts\dragonLook.cs" />
      <Compile Include="Assets\Scripts\joystickDebug.cs" />
      <Compile Include="Assets\Scripts\playAnimation.cs" />
      <Compile Include="Assets\Selector.cs" />
+     <Compile Include="Assets\ServerFace.cs" />
      <Compile Include="Assets\ServerHandler.cs" />
+     <Compile Include="Assets\rotator.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
      <None Include="Assets\OVR\Shaders\TextShader3D.shader" />

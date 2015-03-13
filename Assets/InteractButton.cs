@@ -7,7 +7,8 @@ public class InteractButton : MonoBehaviour
         public string action;
         private Color startColor;
     
-
+        public GameObject enable;
+        public GameObject disable;
 
         void Start ()
         {
@@ -26,6 +27,12 @@ public class InteractButton : MonoBehaviour
 
         public void Action ()
         {
+                if (enable != null) {
+                        enable.SetActive (true);
+                }
+                if (disable != null) {
+                        disable.SetActive (false);
+                }
                 if (Network.isServer) {
                         board.ClientAction (action, Network.player);
                 } else {
