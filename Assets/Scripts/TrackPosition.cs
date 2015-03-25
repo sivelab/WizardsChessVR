@@ -6,10 +6,6 @@ public class TrackPosition : MonoBehaviour
         public string address;
         public int channel;
 
-        void Start ()
-        {
-                MakeRelativeEqual.toTrack = this.transform;
-        }
 
         void Update ()
         {

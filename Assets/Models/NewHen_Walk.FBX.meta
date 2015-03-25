@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: 9b1783b41cd522046b4657242e5d4b13
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: BN_Body
+    100002: BN_Head
+    100004: BN_Hip
+    100006: BN_Jaw
+    100008: BN_LAnkle
+    100010: BN_LFoot
+    100012: BN_LLeg
+    100014: BN_LShin
+    100016: BN_LWing1
+    100018: BN_LWing2
+    100020: BN_LWing3
+    100022: BN_Neck1
+    100024: BN_Neck2
+    100026: BN_NeckBase
+    100028: BN_RAnkle
+    100030: BN_RFoot
+    100032: BN_RLeg
+    100034: BN_RShin
+    100036: BN_RWing1
+    100038: BN_RWing2
+    100040: BN_RWing3
+    100042: BN_Tail1
+    100044: BN_Tail2
+    100046: Box004
+    100048: CN_Head
+    100050: CN_Hips
+    100052: CN_Jaw
+    100054: CN_LFoot
+    100056: CN_LShoulder
+    100058: CN_LToes
+    100060: CN_RFoot
+    100062: CN_RShoulder
+    100064: CN_RToes
+    100066: CN_Tail
+    100068: connectBone001
+    100070: FinalChicken
+    100072: IK Chain001
+    100074: IK Chain002
+    100076: IK_LLowwerLeg
+    100078: IK_LUpperLeg
+    100080: IK_RLowwerLeg
+    100082: IK_RUpperLeg
+    100084: ND_HeadEnd
+    100086: ND_JawEnd
+    100088: ND_LFootEnd
+    100090: ND_LThigh
+    100092: ND_RFootEnd
+    100094: ND_RThigh
+    100096: ND_TailEnd
+    100098: ND_WingEnd
+    100100: ND_WingEnd 1
+    100102: //RootNode
+    400000: BN_Body
+    400002: BN_Head
+    400004: BN_Hip
+    400006: BN_Jaw
+    400008: BN_LAnkle
+    400010: BN_LFoot
+    400012: BN_LLeg
+    400014: BN_LShin
+    400016: BN_LWing1
+    400018: BN_LWing2
+    400020: BN_LWing3
+    400022: BN_Neck1
+    400024: BN_Neck2
+    400026: BN_NeckBase
+    400028: BN_RAnkle
+    400030: BN_RFoot
+    400032: BN_RLeg
+    400034: BN_RShin
+    400036: BN_RWing1
+    400038: BN_RWing2
+    400040: BN_RWing3
+    400042: BN_Tail1
+    400044: BN_Tail2
+    400046: Box004
+    400048: CN_Head
+    400050: CN_Hips
+    400052: CN_Jaw
+    400054: CN_LFoot
+    400056: CN_LShoulder
+    400058: CN_LToes
+    400060: CN_RFoot
+    400062: CN_RShoulder
+    400064: CN_RToes
+    400066: CN_Tail
+    400068: connectBone001
+    400070: FinalChicken
+    400072: IK Chain001
+    400074: IK Chain002
+    400076: IK_LLowwerLeg
+    400078: IK_LUpperLeg
+    400080: IK_RLowwerLeg
+    400082: IK_RUpperLeg
+    400084: ND_HeadEnd
+    400086: ND_JawEnd
+    400088: ND_LFootEnd
+    400090: ND_LThigh
+    400092: ND_RFootEnd
+    400094: ND_RThigh
+    400096: ND_TailEnd
+    400098: ND_WingEnd
+    400100: ND_WingEnd 1
+    400102: //RootNode
+    2300000: Box004
+    3300000: Box004
+    4300000: FinalChicken
+    4300002: Box004
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: FinalChicken
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

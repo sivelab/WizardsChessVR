@@ -4,7 +4,7 @@ using System.Collections;
 public class MakeRelativeEqual : MonoBehaviour
 {
         public Transform localReference;
-        public static Transform toTrack;
+        public Transform toTrack;
 
         void Update ()
         {
