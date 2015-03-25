@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 458404}
   - 33: {fileID: 3358404}
   - 23: {fileID: 2358404}
-  - 95: {fileID: 9558404}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged

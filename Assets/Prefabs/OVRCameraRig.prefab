@@ -28,7 +28,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 462366}
   - 81: {fileID: 8162372}
-  - 114: {fileID: 11446088}
+  - 114: {fileID: 11481354}
   m_Layer: 0
   m_Name: CenterEyeAnchor
   m_TagString: Untagged
@@ -248,21 +248,6 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162366}
   m_Enabled: 1
---- !u!114 &11446088
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 162366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ac074cc73033e540be4124febcadec9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particleTrailPrefab: {fileID: 100000, guid: 89f187ca43cce324196d1298cab8250a, type: 2}
-  board: {fileID: 0}
-  overlap: .200000003
-  FacePrefab: {fileID: 100000, guid: f2f7f49e6ec5d6342a71b092f0bef130, type: 2}
 --- !u!114 &11462366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -317,6 +302,18 @@ MonoBehaviour:
   freezeTimeWarp: 0
   resetTrackerOnLoad: 1
   monoscopic: 0
+--- !u!114 &11481354
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e45cf7dfcb712f4f8871cb763807b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FacePrefab: {fileID: 100000, guid: f2f7f49e6ec5d6342a71b092f0bef130, type: 2}
 --- !u!135 &13562372
 SphereCollider:
   m_ObjectHideFlags: 1

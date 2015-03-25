@@ -5,7 +5,7 @@ public class PlayerMaker : MonoBehaviour
 {
         public GameObject Oculus;
         public GameObject Server;
-        public Board board;
+
         void Start ()
         {
                 if (Application.isEditor) {
