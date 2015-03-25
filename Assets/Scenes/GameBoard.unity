@@ -12623,7 +12623,7 @@ MonoBehaviour:
   gamePrefabs:
   - {fileID: 166266, guid: 2fd5c362a13a42248b294faeffc0f868, type: 2}
   - {fileID: 150656, guid: 08e5e9948c3aff14f900f845e95b5a7e, type: 2}
-  - {fileID: 0}
+  - {fileID: 160720, guid: 3d8f1990ac619144582eda583bd77a40, type: 2}
 --- !u!4 &1092719293
 Transform:
   m_ObjectHideFlags: 0

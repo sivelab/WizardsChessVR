@@ -4,9 +4,9 @@ using System.Collections;
 [RequireComponent (typeof(TrackPosition))]
 public class ChangeTracker : MonoBehaviour
 {
-        TrackPosition trackPosition;
+	TrackPosition trackPosition;
 
-        private static KeyCode[] trackButtons = {
+	private static KeyCode[] trackButtons = {
                 KeyCode.Alpha1,
                 KeyCode.Alpha2,
                 KeyCode.Alpha3,
@@ -17,18 +17,18 @@ public class ChangeTracker : MonoBehaviour
                 KeyCode.Alpha8,
         };
 
-        void Start ()
-        {
-                trackPosition = (TrackPosition)GetComponent<TrackPosition> ();
-        }
+	void Start ()
+	{
+		trackPosition = (TrackPosition)GetComponent<TrackPosition> ();
+	}
 
-        void Update ()
-        {
-                for (int i = 0; i < 8; i++) {
-                        if (Input.GetKeyDown (trackButtons [i])) {
-                                trackPosition.channel = i;
-                                break;
-                        }
-                }
-        }
+	void Update ()
+	{
+		for (int i = 0; i < 8; i++) {
+			if (Input.GetKeyDown (trackButtons [i])) {
+				trackPosition.channel = i;
+				break;
+			}
+		}
+	}
 }
