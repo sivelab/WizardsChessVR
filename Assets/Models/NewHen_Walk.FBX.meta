@@ -111,7 +111,7 @@ ModelImporter:
     3300000: Box004
     4300000: FinalChicken
     4300002: Box004
-    7400000: Take 001
+    7400000: Walk
     9500000: //RootNode
     13700000: FinalChicken
   materials:
@@ -129,7 +129,137 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 58
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Box004
+        weight: 1
+      - path: CN_Hips
+        weight: 1
+      - path: CN_Hips/BN_Hip
+        weight: 1
+      - path: CN_Hips/BN_Hip/BN_Body
+        weight: 1
+      - path: CN_Hips/BN_Hip/BN_Body/BN_LWing1
+        weight: 1
+      - path: CN_Hips/BN_Hip/BN_Body/BN_LWing1/BN_LWing2
+        weight: 1
+      - path: CN_Hips/BN_Hip/BN_Body/BN_LWing1/BN_LWing2/BN_LWing3
+        weight: 1
+      - path: CN_Hips/BN_Hip/BN_Body/BN_LWing1/BN_LWing2/BN_LWing3/ND_WingEnd
+        weight: 1
+      - path: CN_Hips/BN_Hip/BN_Body/BN_NeckBase
+        weight: 1
+      - path: CN_Hips/BN_Hip/BN_Body/BN_NeckBase/BN_Neck1
+        weight: 1
+      - path: CN_Hips/BN_Hip/BN_Body/BN_NeckBase/BN_Neck1/BN_Neck2
+        weight: 1
+      - path: CN_Hips/BN_Hip/BN_Body/BN_NeckBase/BN_Neck1/BN_Neck2/BN_Head
+        weight: 1
+      - path: CN_Hips/BN_Hip/BN_Body/BN_NeckBase/BN_Neck1/BN_Neck2/BN_Head/connectBone001
+        weight: 1
+      - path: CN_Hips/BN_Hip/BN_Body/BN_NeckBase/BN_Neck1/BN_Neck2/BN_Head/connectBone001/BN_Jaw
+        weight: 1
+      - path: CN_Hips/BN_Hip/BN_Body/BN_NeckBase/BN_Neck1/BN_Neck2/BN_Head/connectBone001/BN_Jaw/ND_JawEnd
+        weight: 1
+      - path: CN_Hips/BN_Hip/BN_Body/BN_NeckBase/BN_Neck1/BN_Neck2/BN_Head/ND_HeadEnd
+        weight: 1
+      - path: CN_Hips/BN_Hip/BN_Body/BN_RWing1
+        weight: 1
+      - path: CN_Hips/BN_Hip/BN_Body/BN_RWing1/BN_RWing2
+        weight: 1
+      - path: CN_Hips/BN_Hip/BN_Body/BN_RWing1/BN_RWing2/BN_RWing3
+        weight: 1
+      - path: CN_Hips/BN_Hip/BN_Body/BN_RWing1/BN_RWing2/BN_RWing3/ND_WingEnd 1
+        weight: 1
+      - path: CN_Hips/BN_Hip/BN_Tail1
+        weight: 1
+      - path: CN_Hips/BN_Hip/BN_Tail1/BN_Tail2
+        weight: 1
+      - path: CN_Hips/BN_Hip/BN_Tail1/BN_Tail2/ND_TailEnd
+        weight: 1
+      - path: CN_Hips/BN_Hip/CN_Head
+        weight: 1
+      - path: CN_Hips/BN_Hip/CN_Head/CN_Jaw
+        weight: 1
+      - path: CN_Hips/BN_Hip/CN_Head/IK Chain002
+        weight: 1
+      - path: CN_Hips/BN_Hip/CN_Head/IK Chain002/IK Chain001
+        weight: 1
+      - path: CN_Hips/BN_Hip/ND_LThigh
+        weight: 1
+      - path: CN_Hips/BN_Hip/ND_LThigh/BN_LShin
+        weight: 1
+      - path: CN_Hips/BN_Hip/ND_LThigh/BN_LShin/BN_LLeg
+        weight: 1
+      - path: CN_Hips/BN_Hip/ND_LThigh/BN_LShin/BN_LLeg/BN_LAnkle
+        weight: 1
+      - path: CN_Hips/BN_Hip/ND_LThigh/BN_LShin/BN_LLeg/BN_LAnkle/BN_LFoot
+        weight: 1
+      - path: CN_Hips/BN_Hip/ND_LThigh/BN_LShin/BN_LLeg/BN_LAnkle/BN_LFoot/ND_LFootEnd
+        weight: 1
+      - path: CN_Hips/BN_Hip/ND_RThigh
+        weight: 1
+      - path: CN_Hips/BN_Hip/ND_RThigh/BN_RShin
+        weight: 1
+      - path: CN_Hips/BN_Hip/ND_RThigh/BN_RShin/BN_RLeg
+        weight: 1
+      - path: CN_Hips/BN_Hip/ND_RThigh/BN_RShin/BN_RLeg/BN_RAnkle
+        weight: 1
+      - path: CN_Hips/BN_Hip/ND_RThigh/BN_RShin/BN_RLeg/BN_RAnkle/BN_RFoot
+        weight: 1
+      - path: CN_Hips/BN_Hip/ND_RThigh/BN_RShin/BN_RLeg/BN_RAnkle/BN_RFoot/ND_RFootEnd
+        weight: 1
+      - path: CN_LFoot
+        weight: 1
+      - path: CN_LFoot/CN_LToes
+        weight: 1
+      - path: CN_LFoot/IK_LLowwerLeg
+        weight: 1
+      - path: CN_LShoulder
+        weight: 1
+      - path: CN_RFoot
+        weight: 1
+      - path: CN_RFoot/CN_RToes
+        weight: 1
+      - path: CN_RFoot/IK_RLowwerLeg
+        weight: 1
+      - path: CN_RShoulder
+        weight: 1
+      - path: CN_Tail
+        weight: 1
+      - path: FinalChicken
+        weight: 1
+      - path: IK_LUpperLeg
+        weight: 1
+      - path: IK_RUpperLeg
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []

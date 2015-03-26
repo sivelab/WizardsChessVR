@@ -1,12 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerMaker.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\TrackPosition.cs">
     <Files>
-      <File FileName="Assets\Scripts\ResetPosition.cs" Line="20" Column="60" />
-      <File FileName="Assets\Scripts\PlayerMaker.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MakeRelativeEqual.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\TrackPosition.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ChangeTracker.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameCreator.cs" Line="24" Column="48" />
+      <File FileName="Assets\Scripts\ResetPosition.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MakeRelativeEqual.cs" Line="7" Column="16" />
+      <File FileName="Assets\Scripts\TrackPosition.cs" Line="8" Column="9" />
+      <File FileName="Assets\Scripts\ChangeTracker.cs" Line="27" Column="1" />
       <File FileName="Assets\Scripts\ActionLever.cs" Line="12" Column="40" />
       <File FileName="Assets\Scripts\DisableOnServer.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ServerHandler.cs" Line="22" Column="10" />
