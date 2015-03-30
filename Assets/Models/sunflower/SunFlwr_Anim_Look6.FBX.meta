@@ -108,7 +108,7 @@ ModelImporter:
     400100: IK_RHand (move)
     400102: //RootNode
     4300000: dragon
-    7400000: Take 001
+    7400000: Right_Up
     9500000: //RootNode
     13700000: dragon
   materials:
@@ -126,7 +126,144 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Right_Up
+      takeName: Take 001
+      firstFrame: 79
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: '*CN_Move Everything'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_LShoulder'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_LShoulder/BN_LBicep'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_LShoulder/BN_LBicep/BN_LForearm'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_LShoulder/BN_LBicep/BN_LForearm/BN_LWrist'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_LShoulder/BN_LBicep/BN_LForearm/BN_LWrist/BN_LHand'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_LShoulder/BN_LBicep/BN_LForearm/BN_LWrist/BN_LHand/BN_LFingers'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_LShoulder/BN_LBicep/BN_LForearm/BN_LWrist/BN_LHand/BN_LFingers/BN_LFingerTips'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_LShoulder/BN_LBicep/BN_LForearm/BN_LWrist/BN_LThumb'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_Neck1'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_Neck1/BN_Neck2'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_Neck1/BN_Neck2/BN_Neck3'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_Neck1/BN_Neck2/BN_Neck3/BN_HeadBase'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_Neck1/BN_Neck2/BN_Neck3/BN_HeadBase/BN_HeadTop'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_Neck1/BN_Neck2/BN_Neck3/BN_HeadBase/BN_HeadTop/BN_LHornConnect'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_Neck1/BN_Neck2/BN_Neck3/BN_HeadBase/BN_HeadTop/BN_LHornConnect/BN_LHorn'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_Neck1/BN_Neck2/BN_Neck3/BN_HeadBase/BN_HeadTop/BN_RHornConnect'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_Neck1/BN_Neck2/BN_Neck3/BN_HeadBase/BN_HeadTop/BN_RHornConnect/BN_RHorn'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_Neck1/BN_Neck2/BN_Neck3/BN_Jaw'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_RShoulder'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_RShoulder/BN_RBicep'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_RShoulder/BN_RBicep/BN_RForearm'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_RShoulder/BN_RBicep/BN_RForearm/BN_RWrist'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_RShoulder/BN_RBicep/BN_RForearm/BN_RWrist/BN_RHand'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_RShoulder/BN_RBicep/BN_RForearm/BN_RWrist/BN_RHand/BN_RFingers'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_RShoulder/BN_RBicep/BN_RForearm/BN_RWrist/BN_RHand/BN_RFingers/BN_RFingerTips'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_RShoulder/BN_RBicep/BN_RForearm/BN_RWrist/BN_RThumb'
+        weight: 1
+      - path: '*CN_Move Everything/CN_Back (rotate)'
+        weight: 1
+      - path: '*CN_Move Everything/CN_Look At Me! (move)'
+        weight: 1
+      - path: '*CN_Move Everything/CN_LShoulder (move and rotate)'
+        weight: 1
+      - path: '*CN_Move Everything/CN_LShoulder (move and rotate)/CN_LElbow (move)'
+        weight: 1
+      - path: '*CN_Move Everything/CN_LShoulder (move and rotate)/CN_LWrist (move
+          and rotate)'
+        weight: 1
+      - path: '*CN_Move Everything/CN_LShoulder (move and rotate)/CN_LWrist (move
+          and rotate)/IK_LArm'
+        weight: 1
+      - path: '*CN_Move Everything/CN_LShoulder (move and rotate)/CN_LWrist (move
+          and rotate)/IK_LHand (move)'
+        weight: 1
+      - path: '*CN_Move Everything/CN_RShoulder (move and rotate)'
+        weight: 1
+      - path: '*CN_Move Everything/CN_RShoulder (move and rotate)/CN_RElbow (move)'
+        weight: 1
+      - path: '*CN_Move Everything/CN_RShoulder (move and rotate)/CN_RWrist (move
+          and rotate)'
+        weight: 1
+      - path: '*CN_Move Everything/CN_RShoulder (move and rotate)/CN_RWrist (move
+          and rotate)/IK_RArm'
+        weight: 1
+      - path: '*CN_Move Everything/CN_RShoulder (move and rotate)/CN_RWrist (move
+          and rotate)/IK_RHand (move)'
+        weight: 1
+      - path: '*CN_Move Everything/Group001'
+        weight: 1
+      - path: '*CN_Move Everything/Group001/*CN_Torso3'
+        weight: 1
+      - path: '*CN_Move Everything/Group001/*CN_Torso3/CN_Neck1'
+        weight: 1
+      - path: '*CN_Move Everything/Group001/*CN_Torso3/CN_Neck1/CN_Neck2'
+        weight: 1
+      - path: '*CN_Move Everything/Group001/*CN_Torso3/CN_Neck1/CN_Neck2/CN_Neck3'
+        weight: 1
+      - path: '*CN_Move Everything/Group001/*CN_Torso3/CN_Neck1/CN_Neck2/CN_Neck3/CN_Jaw
+          (rotate)'
+        weight: 1
+      - path: '*CN_Move Everything/Group001/CN_Shoulders'
+        weight: 1
+      - path: dragon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []

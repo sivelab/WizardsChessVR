@@ -8,7 +8,7 @@ public class dragonLook : MonoBehaviour
         public AnimationCurve speedControl;
 
         private Animator animator;
-        private float val = 0f;
+        private float val = 0.5f;
 
         private float dval;
         // Use this for initialization
@@ -17,6 +17,7 @@ public class dragonLook : MonoBehaviour
                 animator = GetComponent<Animator> ();
         }
 	
+
         // Update is called once per frame
         void Update ()
         {
@@ -24,9 +25,9 @@ public class dragonLook : MonoBehaviour
                         Vector3 relative = headPos.InverseTransformPoint (target.position);
                         float speed = speedControl.Evaluate (Mathf.Clamp (Mathf.Abs (relative.z / 100), 0, speedControl.length));
                         if (relative.z > 0) {
-                                dval = - speed;
-                        } else {
                                 dval = speed;
+                        } else {
+                                dval = - speed;
                         }
                         if (val < 0) {
                                 val = 0;
