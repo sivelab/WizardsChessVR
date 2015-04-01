@@ -1468,7 +1468,7 @@ Animator:
   m_GameObject: {fileID: 187070}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 9b1783b41cd522046b4657242e5d4b13, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 45b9d9fa70c31044297bc0ba76dc6621, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -1485,7 +1485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8925ea0bd031c5049a75c48205789d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: .449999988
+  speed: .150000006
 --- !u!137 &13786968
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
