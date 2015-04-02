@@ -8,8 +8,14 @@ AnimatorController:
   m_Name: chicken
   serializedVersion: 2
   m_AnimatorParameters:
-  - m_Name: Random
+  - m_Name: WalkSpeed
     m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: ForwardBlocked
+    m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
@@ -26,6 +32,26 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+--- !u!1101 &110102988
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110220532}
+  m_DstState: {fileID: 110244876}
+  m_TransitionDuration: .12931034
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: ForwardBlocked
+    m_EventTreshold: 0
+    m_ExitTime: .870689631
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
 --- !u!1101 &110142104
 Transition:
   serializedVersion: 2
@@ -46,6 +72,30 @@ Transition:
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
+--- !u!1101 &110198496
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110244876}
+  m_DstState: {fileID: 110220532}
+  m_TransitionDuration: .166666657
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 2
+    m_ConditionEvent: ForwardBlocked
+    m_EventTreshold: 0
+    m_ExitTime: .833333373
+  - m_ConditionMode: 5
+    m_ConditionEvent: ForwardBlocked
+    m_EventTreshold: 0
+    m_ExitTime: .829999983
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
 --- !u!1102 &110220532
 State:
   m_ObjectHideFlags: 3
@@ -57,7 +107,22 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 9b1783b41cd522046b4657242e5d4b13, type: 3}
   m_ParentStateMachine: {fileID: 110722312}
-  m_Position: {x: 82, y: 122, z: 0}
+  m_Position: {x: 84, y: -12, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110244876
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: squak
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: e94a29679757bfe4295ec7521672da3f, type: 3}
+  m_ParentStateMachine: {fileID: 110722312}
+  m_Position: {x: 131, y: 127, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -71,9 +136,21 @@ StateMachine:
   m_DefaultState: {fileID: 110220532}
   m_States:
   - {fileID: 110220532}
+  - {fileID: 110244876}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
-  m_OrderedTransitions: {}
+  m_OrderedTransitions:
+    data:
+      first: {fileID: 110244876}
+      second:
+      - {fileID: 110198496}
+    data:
+      first: {fileID: 0}
+      second: []
+    data:
+      first: {fileID: 110220532}
+      second:
+      - {fileID: 110102988}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: -168, y: -12, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

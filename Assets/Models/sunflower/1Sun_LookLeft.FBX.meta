@@ -1,0 +1,304 @@
+fileFormatVersion: 2
+guid: 3f3948f3ab1e8d14aa5237a2a676a893
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: '*CN_Move Everything'
+    100002: '*CN_Torso3'
+    100004: //RootNode
+    100006: BN_Belly
+    100008: BN_HeadBase
+    100010: BN_HeadTop
+    100012: BN_Jaw
+    100014: BN_LBicep
+    100016: BN_LFingers
+    100018: BN_LFingerTips
+    100020: BN_LForearm
+    100022: BN_LHand
+    100024: BN_LHorn
+    100026: BN_LHornConnect
+    100028: BN_LShoulder
+    100030: BN_LThumb
+    100032: BN_LWrist
+    100034: BN_Neck1
+    100036: BN_Neck2
+    100038: BN_Neck3
+    100040: BN_RBicep
+    100042: BN_RFingers
+    100044: BN_RFingerTips
+    100046: BN_RForearm
+    100048: BN_RHand
+    100050: BN_RHorn
+    100052: BN_RHornConnect
+    100054: BN_RShoulder
+    100056: BN_RThumb
+    100058: BN_RWrist
+    100060: BN_Torso1
+    100062: BN_Torso2
+    100064: BN_Torso3
+    100066: CN_Back (rotate)
+    100068: CN_Jaw (rotate)
+    100070: CN_LElbow (move)
+    100072: CN_Look At Me! (move)
+    100074: CN_LShoulder (move and rotate)
+    100076: CN_LWrist (move and rotate)
+    100078: CN_Neck1
+    100080: CN_Neck2
+    100082: CN_Neck3
+    100084: CN_RElbow (move)
+    100086: CN_RShoulder (move and rotate)
+    100088: CN_RWrist (move and rotate)
+    100090: CN_Shoulders
+    100092: dragon
+    100094: Group001
+    100096: IK_LArm
+    100098: IK_LHand (move)
+    100100: IK_RArm
+    100102: IK_RHand (move)
+    400000: '*CN_Move Everything'
+    400002: '*CN_Torso3'
+    400004: //RootNode
+    400006: BN_Belly
+    400008: BN_HeadBase
+    400010: BN_HeadTop
+    400012: BN_Jaw
+    400014: BN_LBicep
+    400016: BN_LFingers
+    400018: BN_LFingerTips
+    400020: BN_LForearm
+    400022: BN_LHand
+    400024: BN_LHorn
+    400026: BN_LHornConnect
+    400028: BN_LShoulder
+    400030: BN_LThumb
+    400032: BN_LWrist
+    400034: BN_Neck1
+    400036: BN_Neck2
+    400038: BN_Neck3
+    400040: BN_RBicep
+    400042: BN_RFingers
+    400044: BN_RFingerTips
+    400046: BN_RForearm
+    400048: BN_RHand
+    400050: BN_RHorn
+    400052: BN_RHornConnect
+    400054: BN_RShoulder
+    400056: BN_RThumb
+    400058: BN_RWrist
+    400060: BN_Torso1
+    400062: BN_Torso2
+    400064: BN_Torso3
+    400066: CN_Back (rotate)
+    400068: CN_Jaw (rotate)
+    400070: CN_LElbow (move)
+    400072: CN_Look At Me! (move)
+    400074: CN_LShoulder (move and rotate)
+    400076: CN_LWrist (move and rotate)
+    400078: CN_Neck1
+    400080: CN_Neck2
+    400082: CN_Neck3
+    400084: CN_RElbow (move)
+    400086: CN_RShoulder (move and rotate)
+    400088: CN_RWrist (move and rotate)
+    400090: CN_Shoulders
+    400092: dragon
+    400094: Group001
+    400096: IK_LArm
+    400098: IK_LHand (move)
+    400100: IK_RArm
+    400102: IK_RHand (move)
+    4300000: dragon
+    7400000: lookLeft
+    9500000: //RootNode
+    13700000: dragon
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: lookLeft
+      takeName: Take 001
+      firstFrame: 109
+      lastFrame: 110
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: '*CN_Move Everything'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_LShoulder'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_LShoulder/BN_LBicep'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_LShoulder/BN_LBicep/BN_LForearm'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_LShoulder/BN_LBicep/BN_LForearm/BN_LWrist'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_LShoulder/BN_LBicep/BN_LForearm/BN_LWrist/BN_LHand'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_LShoulder/BN_LBicep/BN_LForearm/BN_LWrist/BN_LHand/BN_LFingers'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_LShoulder/BN_LBicep/BN_LForearm/BN_LWrist/BN_LHand/BN_LFingers/BN_LFingerTips'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_LShoulder/BN_LBicep/BN_LForearm/BN_LWrist/BN_LThumb'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_Neck1'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_Neck1/BN_Neck2'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_Neck1/BN_Neck2/BN_Neck3'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_Neck1/BN_Neck2/BN_Neck3/BN_HeadBase'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_Neck1/BN_Neck2/BN_Neck3/BN_HeadBase/BN_HeadTop'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_Neck1/BN_Neck2/BN_Neck3/BN_HeadBase/BN_HeadTop/BN_LHornConnect'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_Neck1/BN_Neck2/BN_Neck3/BN_HeadBase/BN_HeadTop/BN_LHornConnect/BN_LHorn'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_Neck1/BN_Neck2/BN_Neck3/BN_HeadBase/BN_HeadTop/BN_RHornConnect'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_Neck1/BN_Neck2/BN_Neck3/BN_HeadBase/BN_HeadTop/BN_RHornConnect/BN_RHorn'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_Neck1/BN_Neck2/BN_Neck3/BN_Jaw'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_RShoulder'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_RShoulder/BN_RBicep'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_RShoulder/BN_RBicep/BN_RForearm'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_RShoulder/BN_RBicep/BN_RForearm/BN_RWrist'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_RShoulder/BN_RBicep/BN_RForearm/BN_RWrist/BN_RHand'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_RShoulder/BN_RBicep/BN_RForearm/BN_RWrist/BN_RHand/BN_RFingers'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_RShoulder/BN_RBicep/BN_RForearm/BN_RWrist/BN_RHand/BN_RFingers/BN_RFingerTips'
+        weight: 1
+      - path: '*CN_Move Everything/BN_Belly/BN_Torso1/BN_Torso2/BN_Torso3/BN_RShoulder/BN_RBicep/BN_RForearm/BN_RWrist/BN_RThumb'
+        weight: 1
+      - path: '*CN_Move Everything/CN_Back (rotate)'
+        weight: 1
+      - path: '*CN_Move Everything/CN_Look At Me! (move)'
+        weight: 1
+      - path: '*CN_Move Everything/CN_LShoulder (move and rotate)'
+        weight: 1
+      - path: '*CN_Move Everything/CN_LShoulder (move and rotate)/CN_LElbow (move)'
+        weight: 1
+      - path: '*CN_Move Everything/CN_LShoulder (move and rotate)/CN_LWrist (move
+          and rotate)'
+        weight: 1
+      - path: '*CN_Move Everything/CN_LShoulder (move and rotate)/CN_LWrist (move
+          and rotate)/IK_LArm'
+        weight: 1
+      - path: '*CN_Move Everything/CN_LShoulder (move and rotate)/CN_LWrist (move
+          and rotate)/IK_LHand (move)'
+        weight: 1
+      - path: '*CN_Move Everything/CN_RShoulder (move and rotate)'
+        weight: 1
+      - path: '*CN_Move Everything/CN_RShoulder (move and rotate)/CN_RElbow (move)'
+        weight: 1
+      - path: '*CN_Move Everything/CN_RShoulder (move and rotate)/CN_RWrist (move
+          and rotate)'
+        weight: 1
+      - path: '*CN_Move Everything/CN_RShoulder (move and rotate)/CN_RWrist (move
+          and rotate)/IK_RArm'
+        weight: 1
+      - path: '*CN_Move Everything/CN_RShoulder (move and rotate)/CN_RWrist (move
+          and rotate)/IK_RHand (move)'
+        weight: 1
+      - path: '*CN_Move Everything/Group001'
+        weight: 1
+      - path: '*CN_Move Everything/Group001/*CN_Torso3'
+        weight: 1
+      - path: '*CN_Move Everything/Group001/*CN_Torso3/CN_Neck1'
+        weight: 1
+      - path: '*CN_Move Everything/Group001/*CN_Torso3/CN_Neck1/CN_Neck2'
+        weight: 1
+      - path: '*CN_Move Everything/Group001/*CN_Torso3/CN_Neck1/CN_Neck2/CN_Neck3'
+        weight: 1
+      - path: '*CN_Move Everything/Group001/*CN_Torso3/CN_Neck1/CN_Neck2/CN_Neck3/CN_Jaw
+          (rotate)'
+        weight: 1
+      - path: '*CN_Move Everything/Group001/CN_Shoulders'
+        weight: 1
+      - path: dragon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

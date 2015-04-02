@@ -6,10 +6,12 @@ public class dragonLook : MonoBehaviour
         public Transform headPos;
         public Transform target;
         public AnimationCurve speedControl;
+        public Transform fire;
 
         private Animator animator;
         private float val = 0.5f;
 
+        private bool isRoaring = false;
         private float dval;
         // Use this for initialization
         void Start ()
@@ -25,9 +27,9 @@ public class dragonLook : MonoBehaviour
                         Vector3 relative = headPos.InverseTransformPoint (target.position);
                         float speed = speedControl.Evaluate (Mathf.Clamp (Mathf.Abs (relative.z / 100), 0, speedControl.length));
                         if (relative.z > 0) {
-                                dval = speed;
-                        } else {
                                 dval = - speed;
+                        } else {
+                                dval = speed;
                         }
                         if (val < 0) {
                                 val = 0;
@@ -42,4 +44,40 @@ public class dragonLook : MonoBehaviour
 
                 }       
         }       
+
+        void ServerTriggerRoar ()
+        {
+                if (Network.isServer && !isRoaring) {
+                        isRoaring = true;
+                        networkView.RPC ("ClientTriggerRoar", RPCMode.All);
+                }
+        }
+
+        [RPC]
+        void ClientTriggerRoar ()
+        {
+                animator.SetBool ("LeanDown", true);
+        }
+
+        void StartRoar ()
+        {
+                animator.SetBool ("Roar", true);
+        }
+
+        void StartFire ()
+        {
+                animator.SetBool ("Roar", false);
+                fire.particleSystem.Play ();
+        }
+
+        void EndFire ()
+        {
+                fire.particleSystem.Stop ();
+        }
+
+        void RoarDone ()
+        {
+                animator.SetBool ("LeanDown", false);
+                isRoaring = false;
+        }
 }
